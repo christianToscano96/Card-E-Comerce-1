@@ -1,13 +1,15 @@
 body{    
     font-family: 'Roboto Condensed', sans-serif;
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+
 .product-grid{
-    margin-top: 15rem;
-    margin-bottom: 5rem; 
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
     font-family: 'Roboto Condensed', sans-serif;
     position: relative;
 }
@@ -47,6 +49,7 @@ body{
 .product-grid:hover .product-image .pic-2{
     opacity: 1;
     transform: scale(1.09);
+    
 }
 .product-grid .product-discount-label,
 .product-grid .product-hot-label{
@@ -57,10 +60,11 @@ body{
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
-    padding: 4px 2px;
+    padding: 4px 1px;
     position: absolute;
     left: 10px;
     top: 10px ;
+    border-radius: 5px;
 }
  
 /*ICONOS AL COSTADO*/
@@ -183,12 +187,42 @@ body{
     bottom: 16px;
     transition: all 0.3s linear 0s;
 }
-.product-grid .add-to-cart:hover {
-    border-radius: 50px;
-    text-decoration: none;
-    background: linear-gradient(-45deg, #01800b,#035d00);
+
+
+/*PRECIO DEL PRODUCTO*/
+.product-grid .price {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 1rem;
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 10px; 
+    
 }
+.product-grid .price span{
+    color: #525252;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 3px 0 0 9px;
+    text-decoration: line-through;
+    opacity: 0.5;
+    vertical-align: top;
+    display: inline-block;
+    
+}
+.product-grid .price:hover {
+    border-radius: 10px;
+    text-decoration: none;
+    background: #A770EF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }  
+
 .product-grid:hover .add-to-cart { opacity: 1; }
 @media only screen and (max-width:990px){
-    .product-grid{ margin-bottom: 30px; }
+    .product-grid{ margin-bottom: 30px;
+ }
 }
