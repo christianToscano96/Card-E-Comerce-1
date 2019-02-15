@@ -2,10 +2,7 @@ body{
     margin: 0;
     padding: 0;   
     font-family: 'Roboto Condensed', sans-serif;
-    background: #A770EF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
 }
 
 
@@ -144,28 +141,33 @@ body{
 }
 /*caja donde va los titulos */
 .product-grid .product-content{
-    background: linear-gradient(-45deg, #ffffff,#d6d6d6);
+   /* background: linear-gradient(-45deg, #ffffff,#d6d6d6);*/
+   background: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 0 0 transparent; 
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin: 0;
 }
-.product-grid .title a{ color: #222;  }
-.product-grid .title a:hover{ color: #3867d6;  text-decoration: none;}
+.product-grid .title a{ color: rgb(255, 255, 255);  }
+.product-grid .title a:hover{ color: #ffffff;  text-decoration: none;}
 .product-grid .product-category a{
     font-size: 14px;
-    color: orangered;
-    margin-bottom: 15px;
+    color: rgb(211, 211, 211);
+    margin-bottom: 10px;
     display: block;
-    text-decoration: none;
+    text-decoration: none;  
 }
 .product-grid .price {
     color: #3867d6;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 7px;
+    
 }
 .product-grid .price span{
-    color: #3867d6;
+    color: #fcfcfc;
     font-size: 14px;
     font-weight: 400;
     margin: 3px 0 0 2px;
@@ -175,34 +177,32 @@ body{
     display: inline-block;
     
 }
-.product-grid .add-to-cart{
+.product-grid .price .add-to-cart{
     color: #fff;
     background: linear-gradient(-45deg, #00d412,#06b800);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
-    width: 55%;
-    padding: 10px 0;
-    border-radius: 50px;    
-    transform: translateX(-50%);
-    position: absolute;
-    left: 50%;
-    bottom: 16px;
+    padding: 6px;
+    border-radius: 5px;
     transition: all 0.3s linear 0s;
+    text-decoration: none;
+}
+.product-grid .add-to-cart:hover {
+    border-radius: 5px;
+    text-decoration: none;
+    background: linear-gradient(-45deg, #00bd10,#059900);
 }
 
 
 /*PRECIO DEL PRODUCTO*/
 .product-grid .price {
-    color: #ffffff;
+    color: #00028d;
     font-size: 18px;
     font-weight: 600;
     padding: 1rem;
-    margin: 1rem;
-    background: #A770EF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-border-radius: 10px; 
-    
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;   
 }
 .product-grid .price span{
     color: #525252;
@@ -215,16 +215,33 @@ border-radius: 10px;
     display: inline-block;
     
 }
-.product-grid .price:hover {
+/*.product-grid .price:hover {
     border-radius: 10px;
     text-decoration: none;
-    background: #A770EF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }  
+    background: #A770EF;  
+    background: -webkit-linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF); 
+    background: linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);
+    }  */
 
 .product-grid:hover .add-to-cart { opacity: 1; }
 @media only screen and (max-width:990px){
     .product-grid{ margin-bottom: 30px;
  }
+ .product-grid .price .add-to-cart{
+    color: #fff;
+    background: linear-gradient(-45deg, #00d412,#06b800);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 5px;
+    bottom: 46px;
+    transition: all 0.3s linear 0s;
+}
+.product-grid .add-to-cart:hover {
+    border-radius: 5px;
+    text-decoration: none;
+    background: linear-gradient(-45deg, #00bd10,#059900);
+}
+
 }
