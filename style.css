@@ -142,10 +142,10 @@ body{
 /*caja donde va los titulos */
 .product-grid .product-content{
    /* background: linear-gradient(-45deg, #ffffff,#d6d6d6);*/
-   background: #FF0099;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0 0 0 0 transparent; 
+   background: #BE93C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 0 0 0 transparent; 
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin: 0;
